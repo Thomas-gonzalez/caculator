@@ -5,34 +5,49 @@
 .display {
     text-align: end;
     border: 1px solid gray;
-    border-radius: 5px;
+    border-radius: 4px;
     padding: 8px;
+    margin-bottom: 4px;
 }
 
 .calculator-buttons {
     display: flex;
+    gap: 4px;
 }
 
 .number-column {
     flex: 4;
     display: flex;
     flex-direction: column;
-    border: 1px solid blue;
+    gap: 4px;
 }
+
 .number-column .row {
+    flex: 1;
     display: flex;
+    gap: 4px;
 }
+
+.number,
+.dot {
+    background-color: #f1f3f4;
+}
+
 .number,
 .dot,
 .equals {
-    flex: 1;
+    flex: 1;    
     text-align: center;
+    border-radius: 4px;
+    padding: 4px;
 }
+
 .dot,
 .equals {
     font-size: large;
     font-weight: bold;
 }
+
 .equals {
     background-color: #4285f4;
     color: white;
@@ -41,4 +56,16 @@
 .operator-column {
     flex: 1;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.operator {
+    flex: 1;
+    background-color: #dadce0;
+    border-radius: 4px;
+    padding: 4px;
+    font-weight: bold;
+    font-size: large;
 }
