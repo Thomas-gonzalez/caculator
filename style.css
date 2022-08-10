@@ -1,5 +1,6 @@
 .calculator {
     width: 400px;
+    padding: 8px;
 }
 
 .display {
@@ -10,13 +11,24 @@
     margin-bottom: 4px;
 }
 
+.upper-operators {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 4px;
+}
+.upper-operators button {
+    flex: 1;
+    padding: 4px;
+}
+
 .calculator-buttons {
     display: flex;
+    height: 150px;
     gap: 4px;
 }
 
 .number-column {
-    flex: 4;
+    flex: 3;
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -26,6 +38,10 @@
     flex: 1;
     display: flex;
     gap: 4px;
+}
+
+.number {
+    font-size: 16px;
 }
 
 .number,
@@ -66,6 +82,9 @@
     background-color: #dadce0;
     border-radius: 4px;
     padding: 4px;
-    font-weight: bold;
-    font-size: large;
+    font-size: 16px;
+}
+
+.calculator button {
+    border: none;
 }
